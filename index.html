@@ -27,15 +27,22 @@ document.onmousedown = mousehandler;
 document.onmouseup = mousehandler;
 </script>
 <style>
+<style>
+@import "https://fonts.googleapis.com/css?family=Ubuntu:400,700italic";
+@import "https://fonts.googleapis.com/css?family=Cabin:400";
+* {
+  box-sizing: border-box; }
+
 html {
   padding: 0;
   margin: 0;
-  --green: rgb(40, 133, 40);
+  --green: rgb(204, 0, 0);
   --size: 500px;
 }
 
 body {
   background-image: url("https://wallpapercave.com/wp/HDKozNc.jpg");
+  font-size: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,8 +72,7 @@ body {
   border-radius: 8px 0 0 8px;
 }
 
-.status::before,
-.status::after {
+.status::before, {
   content: "";
   position: absolute;
   left: 10px;
@@ -260,10 +266,11 @@ body {
   right: -35px;
   bottom: 15px;
 }
+
 </style>
 <script>
 /* Edit Script by Alexander Eric */
-</script>
+</script> 
 <div class="container">
   <div class="screw"></div>
   <div class="screw screw-1"></div>
@@ -272,8 +279,8 @@ body {
   <div class="logo">
     <div class="logo-first"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jata_MalaysiaV2.svg/250px-Jata_MalaysiaV2.svg.png" width="20" height="20"/> MALAYSIA</div>
     <div class="logo-second">D.O.D</div>
-
   </div>
+
   <div class="circle circle-huge">
     <div class="circle circle-big">
       <div class="circle circle-medium">
