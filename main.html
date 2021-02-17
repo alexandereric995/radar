@@ -1,7 +1,31 @@
 <html>
 <head>
-<title>Index</title>
+<title>MIB</title>
+<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jata_MalaysiaV2.svg/250px-Jata_MalaysiaV2.svg.png"/>
+<link rel="author" author="Alexander Eric"/>
 </head>
+<script type="text/javascript">
+  var u = new SpeechSynthesisUtterance();
+  u.text = 'Selamad datang ke system radar phin thar ner gara Malaysia';
+  u.lang = 'en-US';
+  u.rate = 0.850000;
+  speechSynthesis.speak(u);
+</script>
+<script>
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
 <style>
 html {
   padding: 0;
@@ -11,7 +35,7 @@ html {
 }
 
 body {
-  background: #232;
+  background-image: url("https://wallpapercave.com/wp/HDKozNc.jpg");
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +51,7 @@ body {
 
 .status {
   font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
-    sans-serif;
+  sans-serif;
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 2px;
@@ -56,8 +80,8 @@ body {
 }
 
 .status::after {
-  background: radial-gradient(var(--green) 60%, darkgreen 40%);
-  animation: light 1.2s infinite alternate
+  background: radial-gradient(var(--green) 60%, darkgreen 12%);
+  animation: light 0.5s infinite alternate
     cubic-bezier(0.785, 0.135, 0.15, 0.86);
   border-color: transparent;
   box-shadow: 0 0 5px 1px var(--green);
@@ -129,7 +153,7 @@ body {
   content: "";
   border-radius: 50%;
   will-change: opacity;
-  animation: scan 5s linear infinite;
+  animation: scan 3s linear infinite;
   opacity: 0.4;
 }
 
@@ -236,7 +260,6 @@ body {
   right: -35px;
   bottom: 15px;
 }
-
 </style>
 <script>
 /* Edit Script by Alexander Eric */
@@ -247,8 +270,9 @@ body {
   <div class="screw screw-2"></div>
   <div class="screw screw-3"></div>
   <div class="logo">
-    <div class="logo-first">MALAYSIA</div>
-    <div class="logo-second">TUDM</div>
+    <div class="logo-first"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Jata_MalaysiaV2.svg/250px-Jata_MalaysiaV2.svg.png" width="20" height="20"/> MALAYSIA</div>
+    <div class="logo-second">D.O.D</div>
+
   </div>
   <div class="circle circle-huge">
     <div class="circle circle-big">
@@ -261,7 +285,8 @@ body {
       </div>
     </div>
   </div>
-  <div class="status">SMART RADAR</div>
+  <div class="status">LIVE GPS</div>
 </div>
 </body>
+
 </html>
