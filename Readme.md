@@ -46,6 +46,6 @@
     
      
    
- Click here to [DEMO](https://alexandereric995.github.io/qrcodegen/)
+ Click here to [DEMO](https://alexandereric995.github.io/radar/)
    
    	
