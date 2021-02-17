@@ -6,6 +6,7 @@
     HARAM HARAM SOFTWARE INC
 			   
     TOOLS INFORMATIONS
+    
     	* This tools was publish without any Halal Certification 
 	* Category of tools: Non Halal Software Development
 	* Any Software publish also not baptize from any church reverence
